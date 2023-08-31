@@ -61,10 +61,11 @@ public class OrganizadorReporte {
                     Venta venta = new Venta();
                     venta.setId(String.valueOf(idsVEnta.getInt("id_producto")));
                     venta.setIdFactura(String.valueOf(idsVEnta.getString("id_factura")));
-                    ResultSet datosFactura = connector.selectFrom("SELECT fecha_compra FROM factura " +
-                            "WHERE numero_factura = \'" + venta.getIdFactura() + "\';");
-                    System.out.println(datosFactura.getString("fecha_compra"));
-                    venta.setFechaCompra(datosFactura.getString("fecha_compra"));
+                    try (ResultSet datosFactura = connector.selectFrom("SELECT fecha_compra FROM factura " +
+                            "WHERE numero_factura = \'" + venta.getIdFactura() + "\';")) {
+                        System.out.println(datosFactura.getString("fecha_compra"));
+                        venta.setFechaCompra(datosFactura.getString("fecha_compra"));
+                    }
                     ResultSet datosProducto = connector.selectFrom("SELECT nombre, precio FROM mueble_tipo" +
                             "WHERE nombre = (SELECT tipo_mueble FROM mueble_producto WHERE id = \'" + venta.getId() + "\');");
                     ResultSet costos = connector.selectFrom("SELECT precio FROM mueble_producto Where id = \'" + venta.getId() + "\');");

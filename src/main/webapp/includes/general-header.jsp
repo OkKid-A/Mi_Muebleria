@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page="/includes/resources.jsp" />
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c07a31">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #c07a31">
     <a class="navbar-brand" href="">Mi Muebleria</a>
     <div class="collapse navbar-collapse nav-fill" id="navbarText">
         <ul class="navbar-nav mr-auto mr-2">

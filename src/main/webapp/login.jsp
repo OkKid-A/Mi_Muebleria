@@ -70,16 +70,17 @@
     .btn:hover {
         background: #6893e1;
         border: #E8D426;
+
     }
-</style>
+</style><
 <body>
 <div class="pt-5">
-    <div container class="container">
+    <div  class="container">
         <h1 class="text-center"> Mi Muebleria </h1>
         <div class="row">
             <div class="col-md-5 mx-auto">
                 <div class="card-transparent card-body">
-                    <form id="submitForm" action="servlets/elector-servlet" method="post" data-parsley-validate=""
+                    <form id="submitForm" action="servlets/elector-servlet" method="POST" data-parsley-validate=""
                           data-parsley-errors-messages-disabled="true" novalidate="false">
                         <div class="form-group required">
                             <label class="text" for="username" > Ingresa tu Usuario</label>

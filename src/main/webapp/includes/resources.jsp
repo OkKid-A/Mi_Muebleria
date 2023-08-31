@@ -6,10 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="/Mi_Muebleria/resources/css/bootstrap.css">
-<link rel="stylesheet" href="/Mi_Muebleria/resources/css/personalized.css">
-<script src="/Mi_Muebleria/resources/js/bootstrap.js"></script>
-<script src="/Mi_Muebleria/resources/js/jquery-3.6.0.min.js"></script>
-<script src="/Mi_Muebleria/resources/js/jquery-ui.js"></script>
-<link rel="stylesheet" href="/Mi_Muebleria/resources/css/jquery-ui.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/personalized.css">
+<script src="${pageContext.request.contextPath}/resources/js/bootstrap.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.6.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/jquery-ui.css">
 

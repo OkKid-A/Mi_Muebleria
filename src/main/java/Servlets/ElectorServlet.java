@@ -21,6 +21,7 @@ public class ElectorServlet extends HttpServlet {
         Usuario user = null;
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+        System.out.println(username);
         String query = String.format("SELECT * FROM usuario WHERE nombre_usuario = %s AND password = MD5(%s)", "'" + username + "'", "'" + password + "'");
         try {
             Connector connector = new Connector();
